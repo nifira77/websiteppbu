@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1e293b;
+    background-color: #fdfdfc;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-serif-islamic {
+    font-family: 'Amiri', Georgia, serif;
+  }
+}
+
+/* 2mm Active Navigation Indicator requested by user */
+.border-b-2mm {
+  border-bottom-width: 2mm !important;
+}
+
+.border-l-2mm {
+  border-left-width: 2mm !important;
+}
+
+/* Islamic Geometric Subtle Background */
+.bg-islamic-pattern {
+  background-color: #f8faf9;
+  background-image: radial-gradient(#059669 0.65px, transparent 0.65px), radial-gradient(#059669 0.65px, #f8faf9 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+  background-opacity: 0.05;
+}
+
+.bg-islamic-dark {
+  background-color: #064e3b;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Print styling for Kartu / Bukti Pendaftaran */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-registration-card, #printable-registration-card * {
+    visibility: visible;
+  }
+  #printable-registration-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: 2px solid #064e3b !important;
+  }
+}

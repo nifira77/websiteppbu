@@ -1,0 +1,6 @@
+{
+  "name": "Pondok Pesantren Bustanul Ulum",
+  "description": "Website Resmi Pondok Pesantren Bustanul Ulum: Profil, Sambutan Pengasuh, Visi Misi, Pendaftaran Online (PSB), Kegiatan Santri, Galeri, Live Chat, dan Dashboard Admin CMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
